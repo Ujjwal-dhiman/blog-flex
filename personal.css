@@ -1,0 +1,147 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.row {  
+  display: flex;
+}
+.side {
+  flex: 20%;
+  background-color: black;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.side :hover{
+	background-color: grey;
+}
+.main {
+  flex: 80%;
+  background-color: black;
+  padding: 20px;
+}
+.main h1{
+	color: white;
+	font-weight: 100;
+	text-align: center;
+}
+.main p{
+	color: white;
+	font-weight: 100;
+	
+}
+.main h2{
+	color: white;
+	font-weight: 100;
+	width: 200px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid white;
+}
+.secondflex{
+	margin-top: 50px;
+	display: flex;
+	background-color: #aaa;
+	justify-content: space-around;
+}
+.insideflex{
+	padding: 20px;
+	text-align: center;
+	font-size: 30px;
+	align-items:center;	
+}
+.secondflex p{
+	color: black;
+}
+.button{
+	padding: 10px;
+	background-color: #aaa;
+	margin-top: 20px;
+	width: 250px;
+	text-align: center;
+	font-size: 10px;
+}
+.thirdflex{
+	display: flex;
+}
+.thirdflex :hover{
+	filter: opacity(.5);
+}
+.third-inside-flex{
+	flex: 40%;
+	display: block;
+	margin-right: 20px;
+}
+.third-right-flex{
+	flex: 40%;
+	display: block;
+}
+.third-right-flex h1{
+	padding: 50px;
+	background-color: #aaa;
+	color: black;
+}
+.third-right-flex p{
+	text-align: center;
+	color: white;
+	border-bottom: 1px solid white;
+	padding: 10px;
+}
+.third-inside-flex h1{
+	padding: 50px;
+	background-color: #aaa;
+	color: black;
+}
+.third-inside-flex p{
+	text-align: center;
+	color: white;
+	border-bottom: 1px solid white;
+	padding: 10px;
+}
+.reputation{
+	width: 45%;
+	display: inline-block;
+	margin-top: 40px;
+}
+.gallery{
+	display: flex;
+	margin: 10px;
+}
+.coloumn1{
+	flex: 40%;
+	filter: grayscale(90%);
+}
+.coloumn2{
+	flex: 40%;
+	filter: grayscale(90%);
+}
+.contact{
+	padding: 20px;
+}
+.form{
+	color: white;
+	margin-top: 50px;
+}
+.form input[type="text"]
+{
+	width: 70%;
+	padding: 20px;
+	margin-top: 10px; 
+}
+.form input[type="submit"]
+{
+	width: 30%;
+	padding: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+@media screen and (max-width: 1024px){
+	 .side , .row,.main, .thirdflex, .gallery  {
+		flex-direction: column;
+		width: 100%;
+	}
+}
